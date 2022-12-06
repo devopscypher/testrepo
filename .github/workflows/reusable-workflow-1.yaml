@@ -1,0 +1,18 @@
+name: Reusable Workflow 1
+
+on:
+ workflow_call:
+ 
+jobs:
+
+   ru1-jobs1:
+   
+     runs-on: ubuntu-latest
+     
+     steps:
+     
+       - uses: action/checkout@v3
+       
+       - name: Write something to log
+         run: |
+           echo  "I am devops Eng"
